@@ -1,0 +1,171 @@
+/* Importing Custom Font family(Poppins) */
+@font-face {
+  font-family: Poppins;
+  src: url(./assets/fonts/Poppins-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: Poppins;
+  src: url(./assets/fonts/Poppins-Italic.ttf) format("truetype");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(./assets/fonts/Poppins-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(./assets/fonts/Poppins-BoldItalic.ttf) format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(./assets/fonts/Poppins-ExtraBold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf) format("truetype");
+  font-style: italic;
+  font-weight: 900;
+}
+
+/* Body Basic Styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  overflow: auto;
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(211, 207, 207);
+}
+
+/* App Main Container */
+.mainCont {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 500px;
+  height: fit-content;
+  border-radius: 10px;
+  border-bottom-right-radius: 90px;
+  margin: auto;
+  background: white;
+}
+
+/* User Input */
+.formCont {
+  display: flex;
+  position: relative;
+  gap: 20px;
+  width: 100%;
+  margin: 0;
+}
+
+.formFields {
+  display: flex;
+  width: 80%;
+}
+
+/* Individual input label and field */
+.inputCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex: 1;
+}
+
+.inputCont .error{
+  font-size: 12px;
+  font-family: "Poppins";
+  font-style: italic;
+  color: red;
+}
+
+.inputCont label {
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+  opacity: 0.6;
+  letter-spacing: 2px;
+}
+
+.inputCont input {
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: bold;
+  width: 100px;
+  border-width: 0.01em;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Submit Button */
+.submitBtn {
+  position: absolute;
+  right: 0px;
+  bottom: -65px;
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 100%;
+  padding: 0;
+  background-color: blue;
+  cursor: pointer;
+  z-index: 30;
+}
+
+.submitBtn img {
+  object-fit: contain;
+}
+
+/* Divider Line */
+.hline {
+  margin-top: 30px;
+  min-width: 100%;
+  min-height: 2px;
+  opacity: 0.3;
+  background-color: black;
+}
+
+
+/* Result Section */
+.resultCont{
+    display: flex;
+   flex-direction: column; 
+   justify-content: start;
+   align-items: start;
+   gap: 10px;
+}
+
+.resultCont p{
+    font-family: "Poppins";
+    font-size: 56px;
+    font-weight: 900;
+    font-style: italic;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+}
+
+.resultCont p span{
+    color: blue;
+}
