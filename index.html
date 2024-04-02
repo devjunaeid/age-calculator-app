@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
   <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="./style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -23,24 +24,24 @@
   <div class="mainCont">
     
     <!-- Age Input From -->
-    <form class="formCont">
+    <form class="formCont" id="dateForm">
       <div class="formFields">
 
         <!-- Each Input Field Containing Input Label and Field -->
         <div class="inputCont">
           <label for="day">Day</label>
-          <input type="text" placeholder="DD" name="day" />
-          <p class="error" id="dayErr">Error Happend</p>
+          <input type="number" placeholder="DD" name="day" id="day" />
+          <p class="error" id="dayErr"></p>
         </div>
         <div class="inputCont">
           <label for="month">Month</label>
-          <input type="text" placeholder="MM" name="month" />
-          <p class="error" id="yearErr">Error Happend</p>
+          <input type="number" placeholder="MM" name="month" id="month" />
+          <p class="error" id="monthErr"></p>
         </div>
         <div class="inputCont">
           <label for="year">Year</label>
-          <input type="text" placeholder="YYYY" name="year" />
-          <p class="error" id="yearErr">Error Happend</p>
+          <input type="number" placeholder="YYYY" name="year" id="year" />
+          <p class="error" id="yearErr"></p>
         </div>
       </div>
       <button type="submit" class="submitBtn"><img src="./assets/images/icon-arrow.svg" class="btnImg" /></button>
@@ -51,16 +52,16 @@
 
     <!-- Result Container -->
     <div class="resultCont">
-      <p><span id="year">- -</span> years</p>
-      <p><span id="month">- -</span> months</p>
-      <p><span id="days">- -</span> days</p>
+      <p><span id="yearField">- -</span> years</p>
+      <p><span id="monthField">- -</span> months</p>
+      <p><span id="dayField">- -</span> days</p>
     </div>
   </div>
 
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Thamid Junaeid</a>.
+    Coded by <a href="www.linkedin.com/in/junaeid">Thamid Junaeid</a>.
   </div>
   <script src="./script.js"></script>
 </body>
