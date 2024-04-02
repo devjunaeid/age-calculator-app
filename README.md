@@ -41,8 +41,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontendmentor](https://www.frontendmentor.io/solutions/age-calculator-with-pure-html-css-and-jswith-input-validation-e4-4pKyJQ9)
+- Live Site URL: [View it on Github Pages](https://devjunaeid.github.io/age-calculator-app/)
 
 ## My process
 
