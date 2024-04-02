@@ -91,11 +91,20 @@ body {
   flex: 1;
 }
 
-.inputCont .error{
+/* Error Message. Default: Hidden */
+.inputCont .error {
+  display: none;
   font-size: 12px;
   font-family: "Poppins";
   font-style: italic;
+  margin: 0;
+}
+
+/* This class will append to the error element when error occours*/
+.displayErr {
   color: red;
+  border-color: rgba(243, 33, 33, 0.5) !important;
+  display: flex !important;
 }
 
 .inputCont label {
@@ -114,6 +123,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   width: 100px;
+  color: black;
   border-width: 0.01em;
   border-color: rgba(0, 0, 0, 0.1);
 }
@@ -146,26 +156,75 @@ body {
   background-color: black;
 }
 
-
 /* Result Section */
-.resultCont{
-    display: flex;
-   flex-direction: column; 
-   justify-content: start;
-   align-items: start;
-   gap: 10px;
+.resultCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
 }
 
-.resultCont p{
-    font-family: "Poppins";
-    font-size: 56px;
-    font-weight: 900;
-    font-style: italic;
-    height: 55px;
-    margin: 0;
-    padding: 0;
+.resultCont p {
+  display: flex;
+  gap: 10px;
+  font-family: "Poppins";
+  font-size: 56px;
+  font-weight: 900;
+  font-style: italic;
+  height: 55px;
+  margin: 0;
+  padding: 0;
 }
 
-.resultCont p span{
-    color: blue;
+.resultCont p span {
+  color: blue;
+}
+
+/* Hide Input field Arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* Mobile Design */
+
+@media only screen and (max-width: 600px){
+  .mainCont{
+    width: 85dvw !important;
+    border-bottom-right-radius: 120px;
+    padding: 20px;
+  } 
+ 
+  .formFields{
+    width: 100%;
+  }
+  .inputCont .error{
+    font-size: 9px;
+  }
+
+  .inputCont input{
+    width: 70px;
+  }
+  
+  .hline{
+    margin: 40px 0;
+  }
+
+  .resultCont{
+    padding-bottom: 40px;
+  }
+
+  .resultCont p {
+    font-size: 50px;
+  }
+  
+  .submitBtn{
+    right: 50%;
+    transform: translateX(50%);
+    top: 75px;
+  }
+
 }
